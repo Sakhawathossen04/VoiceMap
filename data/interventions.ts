@@ -1,0 +1,40 @@
+import type { InterventionOption } from "@/lib/types";
+
+export const INTERVENTION_OPTIONS: InterventionOption[] = [
+  {
+    id: "A",
+    title: "Drainage Improvements",
+    type: "Desilting + new inlets",
+    locations: 4,
+    impact: "High",
+    costBDT: 850000,
+    peopleAffected: "High",
+    priorityCoverage: "3 critical clusters",
+    underheardSupport: false,
+    clustersCovered: ["C-01", "C-04"],
+  },
+  {
+    id: "B",
+    title: "Street Lighting Repair",
+    type: "LED retrofit + new poles",
+    locations: 8,
+    impact: "Medium–High",
+    costBDT: 600000,
+    peopleAffected: "High",
+    priorityCoverage: "2 high-priority clusters",
+    underheardSupport: false,
+    clustersCovered: ["C-02", "C-12"],
+  },
+  {
+    id: "C",
+    title: "Accessibility Improvements",
+    type: "Ramps + footpath repair",
+    locations: 3,
+    impact: "High",
+    costBDT: 950000,
+    peopleAffected: "Medium",
+    priorityCoverage: "2 underheard clusters",
+    underheardSupport: true,
+    clustersCovered: ["C-03", "C-07"],
+  },
+];
